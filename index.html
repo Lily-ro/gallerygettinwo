@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galería de Imágenes Interactiva</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <main class="gallery-app">
+    <h1>Gallery it's getting worse</h1>
+    <section class="gallery" id="gallery" aria-label="Gallery it's getting worse">
+      <!-- Thumbnails generados por JS -->
+    </section>
+
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+      <button class="close" id="lightboxClose" aria-label="Cerrar vista ampliada">×</button>
+      <img id="lightboxImage" alt="Imagen ampliada" />
+      <div class="caption" id="lightboxCaption"></div>
+      <div class="controls">
+        <button id="prevBtn" aria-label="Imagen anterior">‹</button>
+        <button id="nextBtn" aria-label="Siguiente imagen">›</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
